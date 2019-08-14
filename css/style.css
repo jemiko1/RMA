@@ -380,6 +380,15 @@ html, body {
       @media (max-width: 600px) {
         .news-p{
             font-size: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .news-box{
+            flex-wrap: wrap;
+        }
+        .news-img{
+            margin: 0 auto;
+            width: 80%;
         }
       }
 
