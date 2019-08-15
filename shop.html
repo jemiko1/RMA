@@ -36,13 +36,13 @@
             <li class="nav-item nav-hover"><a href="index.html" class="nav-link">HOME</a></li>
             <li class="nav-item nav-hover"><a href="team.html" class="nav-link">TEAM</a></li>           
             <li class="nav-item nav-hover dropdown">
-                <a data-toggle="dropdown" class="nav-link dropdown-toggle active-page" href="#">News<b class="caret"></b></a>
+                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">News<b class="caret"></b></a>
                 <ul class="dropdown-menu">                  
                     <li><a href="news.html" class="dropdown-item nav-hover">Club News</a></li>
                     <li><a href="transfers.html" class="dropdown-item nav-hover">Transfer News</a></li>
                 </ul>
             </li>
-            <li class="nav-item nav-hover"><a href="shop.html" class="nav-link">SHOP</a></li>
+            <li class="nav-item nav-hover active-page"><a href="shop.html" class="nav-link">SHOP</a></li>
             <li class="nav-item nav-hover"><a href="#" class="nav-link">Gallery</a></li>
         </ul>
         <form class="navbar-form form-inline ml-4">
@@ -104,8 +104,9 @@
     </div>
 </nav>
 </div>
+</header>
 
-    <div id="slider">
+    <section id="slider">
     	<div class="container-fluid">
     		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -131,50 +132,88 @@
   </a>
 </div>
     	</div>
-    </div>
-
-</header>
+    </section>
 
 
     <!-- START THE FEATURETTES -->
-   <section class="container">
+<section class="container d-flex mt-5">
 
-    <hr>
-
-    	    <h4> 8 August 2019 </h4>
-    <hr>
-    <div class="news-box d-flex align-items-center mt-2">
-        <img class="news-img" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/08/13/15657194061235.jpg">
-        <h5 class="news-p">ზინედინ ზიდანი „რეალის“ სატრანსფერო პოლიტიკით უკმაყოფილოა...</h5>
-    </div>
-    <hr>
-        <div class="news-box d-flex align-items-center">
-        <img class="news-img" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/08/13/15657194061235.jpg">
-        <h5 class="news-p">ზინედინ ზიდანი „რეალის“ სატრანსფერო პოლიტიკით უკმაყოფილოა...</h5>
-    </div>
-    <hr>
-        <div class="news-box d-flex align-items-center">
-        <img class="news-img" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/08/13/15657194061235.jpg">
-        <h5 class="news-p">ზინედინ ზიდანი „რეალის“ სატრანსფერო პოლიტიკით უკმაყოფილოა...</h5>
-    </div>
-    <hr>
-    <h4> 6 August 2019 </h4>
-    <hr>
-        <div class="news-box d-flex align-items-center">
-        <img class="news-img" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/08/13/15657194061235.jpg">
-        <h5 class="news-p">ზინედინ ზიდანი „რეალის“ სატრანსფერო პოლიტიკით უკმაყოფილოა...</h5>
-    </div>
-
-   </section>
-
-
-
-<footer class="footer">
-<div class="">
-	<p>Sponsores Space</p>
+<div class="flex-column">
+        <div class="category-box mr-5 flex-column sticky-top">
+            <hr>
+            <h5> Size </h5>
+<hr>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">XS</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">S</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3">M</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4">L</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5">XL</label>
+                </div>
+<hr>
+            <h5> Gender </h5>
+<hr>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio6">Men</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio7">Women</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio8">Baby</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio9" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio9">All</label>
+                </div>
+        <hr>
+            <h5> Price </h5>
+<hr>
+        <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Minimum Price</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0 USD">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Maximum Price</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="5000 USD">
+  </div>
+</form>
 </div>
+</div>
+   <div class="shop-box row mt-5">
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+        <div class="mini-box mb-5 col-12 col-sm-4"><img src="https://image2.fanobject.com/rm-251379.jpg?width=250&height=250&quality=80"><h6 class="shop-title"> Real-Madrid Home Shirt 19-20</h6><h5>99.99%</h5></div>
+    </div>
+</section>
 
-</footer>
+
+
+
+
+
+
+
 
 
 

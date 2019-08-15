@@ -65,9 +65,9 @@ html, body {
     text-transform: uppercase;
 }
 .news-box{
-    box-shadow: 0 1px 2px gray;
+    box-shadow: 0px 2px 3px 3px gray;
     background: #f1f2f3;
-    margin-top: 50px;
+    padding: 1%;
     
 }
 .news-box:hover{
@@ -81,10 +81,27 @@ html, body {
     width: 200px;
     height: 150px;
     margin-right: 50px;
+    box-shadow: 0px 1px 2px 2px gray;
+
+}
+.category-box{
+    max-width: 150px;
+}
+.mini-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop-title{
+    color: gray;
+}
+.category-box{
+    position
+
 }
 
 
-
+/*BOOTSTRAP NAVIGATION*/
 
 
 
@@ -377,6 +394,11 @@ html, body {
             display: none;
         }
       }
+      @media (max-width: 995px) {
+        .news-p{
+            font-size: 15px;
+        }
+      }
       @media (max-width: 600px) {
         .news-p{
             font-size: 15px;
@@ -387,8 +409,11 @@ html, body {
             flex-wrap: wrap;
         }
         .news-img{
-            margin: 0 auto;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
             width: 80%;
+
         }
       }
 
