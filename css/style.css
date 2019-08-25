@@ -38,12 +38,30 @@ html, body {
 .active-page{
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    border-bottom-color: red;
+    border-bottom-color: #33cabb;;
 }
 .player-box{
+    position: relative;
+    margin: auto;
     border: 1px solid #D0D0D0;
     border-top: 2px solid #000000;
     padding: 0;
+    overflow: hidden;
+}
+.player-box img {
+    transition: transform .5s ease;
+    max-width: 100%;
+    transition: all 0.5s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    filter: grayscale(60%); 
+}
+.player-box:hover img {
+     transform: scale(1.02);
+     transition: transform .5s, filter 0.2s ease-in-out; 
+     filter: grayscale(0%); 
 }
 .under-box{
     background-color: #9e8b4d;
@@ -65,7 +83,7 @@ html, body {
     text-transform: uppercase;
 }
 .news-box{
-    box-shadow: 0px 2px 3px 3px gray;
+    box-shadow: 0px 1px 1px 1px gray;
     background: #f1f2f3;
     padding: 1%;
     
@@ -75,6 +93,7 @@ html, body {
     border-top: black solid 1px;
     background: #f0f0f0;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .news-img{
@@ -91,9 +110,33 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.mini-box img{
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    filter: grayscale(100%);
+}
+.mini-box:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+.mini-box:hover .shop-title {
+    text-decoration: underline;
+    color: #33cabb;
+}
+.mini-box:hover h5 {
+    color: #33cabb;
 }
 .shop-title{
     color: gray;
+    margin-top: 15px;
 }
 .category-box{
     position
@@ -394,11 +437,24 @@ html, body {
             font-size: 14px;
         }
       }
-      @media (max-width: 857px) {
-        .next-date{
+      @media (max-width: 1030px) {
+        .nav{
+            font-size: 14px;
+        }
+      }
+      @media (max-width: 994px) {
+        .nav{
+            font-size: 14px;
+        }
+        .search-box{
             display: none;
         }
       }
+/*      @media (max-width: 857px) {
+        .next-date{
+            display: none;
+        }
+      }*/
       @media (max-width: 995px) {
         .news-p{
             font-size: 15px;
