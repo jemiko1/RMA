@@ -1,6 +1,10 @@
 html, body {
     min-height: 100%;
 }
+.body-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .logo{
     width: 40px;
 }
@@ -9,12 +13,22 @@ html, body {
     border-radius: 5px;
 }
 .footer{
-    background-color: #172030;
-    border-top: 3px solid gray;
-    border-top: solid #f00000;
-    border-width: 3px;
-    padding: 20px;
+    background-color: #e6e6e6;
+    border-top: solid gray;
+    border-width: 1px;
     margin-top: 50px;
+    padding-top: 10px;
+}
+.footer-p{
+    font-size: 10px;
+    color: gray;
+}
+.soc{
+    margin: 0 auto;
+}
+.soc:hover{
+    opacity: .5;
+    margin-top: 2px;
 }
 .ft{
     height: 5px;
@@ -83,10 +97,12 @@ html, body {
     text-transform: uppercase;
 }
 .news-box{
-/*    box-shadow: 0px 1px 1px 1px gray;*/
     padding: 1%;
-    border: 1px solid #D9D9D9;
+/*    border: 1px solid #D9D9D9;*/
+/*    border: 3px solid #ddd;*/
+    border-radius: 4px;
     border-top: 2px solid black;
+    border-bottom: 2px solid #ddd;
 }
 .soc-img{
     width: 30px;
@@ -112,7 +128,7 @@ html, body {
 }
 .news-box:hover{
     border-top: 2px solid #33cabb;
-    box-shadow: 0px 0px 3px 1px gray;
+/*    box-shadow: 0px 0px 3px 1px gray;*/
 }
 
 .news-img{
@@ -122,8 +138,30 @@ html, body {
     box-shadow: 0px 1px 2px 2px gray;
 
 }
+.special-h{
+    color: white;
+}
 .category-box{
     max-width: 150px;
+}
+.sm-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    opacity: .5;
+}
+.sm-box:hover{
+    opacity: 1;
+}
+.soc{
+    width: 40px;
+}
+.trophies-title{
+    font-size: 15px;
+    font-weight: bold;
 }
 .mini-box{
     display: flex;
@@ -165,10 +203,27 @@ html, body {
     max-width: 500px;
     max-height: 500px;
 }
-width="1170" height="620"
 .score-fr{
     width: 1170px;
     height: 620px;
+}
+.special{
+    background-color: #1e1e1e;
+}
+.mini-news{
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.mininewsimg{
+    width: 200px;
+}
+.mininewsp{
+    color: black;
+    font-size: 15px;
+}
+.card{
+    width: 100px;
+    height: 10%;
 }
 
 
