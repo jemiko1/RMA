@@ -165,7 +165,11 @@ html, body {
     max-width: 500px;
     max-height: 500px;
 }
-
+width="1170" height="620"
+.score-fr{
+    width: 1170px;
+    height: 620px;
+}
 
 
 /*BOOTSTRAP NAVIGATION*/
