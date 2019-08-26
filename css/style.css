@@ -1,10 +1,3 @@
-html, body {
-    min-height: 100%;
-}
-.body-bg{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .logo{
     width: 40px;
 }
@@ -73,33 +66,49 @@ html, body {
     filter: grayscale(60%); 
 }
 .player-box:hover img {
-     transform: scale(1.02);
+     transform: scale(1.1) translateY(5%);
      transition: transform .5s, filter 0.2s ease-in-out; 
-     filter: grayscale(0%); 
+     filter: grayscale(0%);
+}
+.player-box:hover .under-box{
+     opacity: .95;
+}
+.player-box:hover .player-number{
+    opacity: 1;
+}
+.player-box:hover .player-name{
+    opacity: 1;
+}
+.player-box:hover .player-pos{
+    opacity: 1;
 }
 .under-box{
     background-color: #9e8b4d;
     width: 100%;
     padding: 1%;
+    transform: scale(1);
 }
 .player-number{
     color: #fff;
     font-size: 60px;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: 20px;
+    opacity: .5;
 }
 .player-name{
     font-size: 20px;
     margin-top: 10px;
     text-transform: uppercase;
+    font-weight: bold;
+    opacity: .5;
 }
 .player-pos{
     text-transform: uppercase;
+    font-size: 15px;
+    opacity: .5;
 }
 .news-box{
     padding: 1%;
-/*    border: 1px solid #D9D9D9;*/
-/*    border: 3px solid #ddd;*/
     border-radius: 4px;
     border-top: 2px solid black;
     border-bottom: 2px solid #ddd;
@@ -113,7 +122,6 @@ html, body {
     margin-bottom: 5px;
 }
 .pos-tv{
-/*    border: 1px solid #0255a5;*/
     color: #0255a5;
 }
 .social-box{
@@ -128,7 +136,6 @@ html, body {
 }
 .news-box:hover{
     border-top: 2px solid #33cabb;
-/*    box-shadow: 0px 0px 3px 1px gray;*/
 }
 
 .news-img{
@@ -152,6 +159,17 @@ html, body {
     margin: auto;
     overflow: hidden;
     opacity: .5;
+}
+.sm-box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.sm-box2:hover img{
+    opacity: .7;
 }
 .sm-box:hover{
     opacity: 1;
@@ -209,6 +227,9 @@ html, body {
 }
 .special{
     background-color: #1e1e1e;
+}
+.special2{
+    background-color: #ebebeb;
 }
 .mini-news{
     background-color: #fff;
