@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--     <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//ADeFmXMEte7+H7Lh/x+y4f8Ete7+N4WacgD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcEg/ABGs3elKsdL///z7////////////+fPx/0ivzv8RrN3pcUg9AAAAAAAAAAAAAAAAAAAAAAAAAAAATXJ0ABqkzdTk2NL////////6+P8hrNX/m5yY/4E2E/9/ORf/kVo//xqkzdRNcXQAAAAAAAAAAAAAAAAAAAAAAFRkZy0gs+L/D63f///8+v8DtO7/B7fw/ziDl/8CvPj/gTcT/we27v8gs+L/WmNnLQAAAAAAAAAAAAAAAAAAAAAUqNbeeqCo//308P8Srd3/x6OT/x6fxf9UZ2T/gDgW/7KHc//w6ub/eaCo/xSo1d0AAAAAAAAAAAAAAAAAAAAAB7Ho+FWiuP/78u7/BbTt/383FP8olbT/PX+P/384Ff////////z6/1Slvf8Hsen0AAAAAAAAAAAAAAAAAAAAAA+s3ehxoaz/yqGO/wK79v9/ORf/d0In/6R8Z////////v7+//Tt6f9zoaz/D6zd6AAAAAAAAAAAAAAAAAAAAAAqk7GXeaSv/2JXS/9SaWn/bE05/wO79v8Dt/H/1MvG/4apsf+CsLz/eqWv/yqSsZYAAAAAAAAAAAAAAAAAAAAAANT/AAux5fMhrdn/T2tu/zemyP8qq9P/IazY/yip0f9jp7r/Ia3Y/wyx5fMA0P8AAAAAAAAAAAAAAAAAAAAAAAAAAABqWEwgSazK/zanyf///v3//////////////Pv/N6jK/0mtyv9qWE4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHRJOQ4bosvNK7Hc/3m7zv95u87/K7Hc/xuiy811SzkNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxf4wAQJKv21VlY7w8iZ22P4ibuFJnaME3k7PaMIKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUPwgASqLK/jFVz/8xcMH/J3/I/yh9xv8wb8L/MVXO/0mjzP6AHAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmiscyMitH/OibX/zcq2P83Ktf/OSXY/4SAz/9qoKzNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuSjMAXHN0Il2sxPebz97/ms/e/16qwfdbdXcibEkzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmAAABY3Z4P2N2dz81AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/D8AAPAPAADgBwAA4AcAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAPgfAAD4HwAA8A8AAPAPAAD8PwAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <title>Real Madrid / GeoLab Final</title>
+  </head>
+
+
+  <body class="body-bg" background="#">
+
+  	<header>
+	<div class="bs-example">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top">
+	<div class="navbar-header d-flex col">
+		<img class="logo" src="img/logo.svg" alt="logo">
+		<a class="navbar-brand" href="#">Real<b>madrid</b></a>  		
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<ul class="nav navbar-nav">
+			<li class="nav-item nav-hover"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item nav-hover"><a href="news.html" class="nav-link">News</a></li>	
+			<li class="nav-item nav-hover"><a href="team.html" class="nav-link">Squad</a></li>			
+			<li class="nav-item nav-hover"><a href="shop.html" class="nav-link">SHOP</a></li>
+			<li class="nav-item nav-hover dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle active-page" href="#">Standings<b class="caret"></b></a>
+				<ul class="dropdown-menu">					
+					<li><a href="standings.html" class="dropdown-item nav-hover">La-Liga</a></li>
+					<li><a href="cl.html" class="dropdown-item nav-hover active-page">Champions-League</a></li>
+				</ul>
+			</li>
+		</ul>
+		<form class="navbar-form form-inline ml-4">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right ml-auto">			
+			<li class="nav-item">
+				<a href="#" data-toggle="dropdown" class="btn mt-1 mb-1">Login</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Sign in with your social media account</p>
+							<div class="form-group social-btn clearfix">
+								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+							</div>
+							<div class="or-seperator"><b>or</b></div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="form-footer">
+								<a href="#">Forgot Your password?</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Fill in this form to create your account!</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+							</div>
+							<div class="form-group">
+								<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+</div>
+</header>
+
+ <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h2>Checkout form</h2>
+    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Product name</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Second product</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Third item</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>EXAMPLECODE</small>
+          </div>
+          <span class="text-success">-$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div>
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://github.com/jemiko1" target="_blank"> J.Bodokia</a>
+  </div>
+
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script></body>
+</html>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

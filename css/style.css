@@ -16,6 +16,16 @@
     font-size: 10px;
     color: gray;
 }
+.bbb{
+    font-family: 'Khand', sans-serif;
+}
+.lead:hover{
+    color: #33cabb;
+    cursor: pointer;
+}
+.main-pic:hover{
+    opacity: .5;
+}
 .soc{
     margin: 0 auto;
 }
@@ -143,7 +153,6 @@
     height: 150px;
     margin-right: 50px;
     box-shadow: 0px 1px 2px 2px gray;
-
 }
 .special-h{
     color: white;
@@ -180,6 +189,10 @@
 .trophies-title{
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+.trophies-h{
+    font-weight: bold;
 }
 .mini-box{
     display: flex;
@@ -197,6 +210,13 @@
     height: auto;
     transform: scale(1);
     filter: grayscale(0);
+}
+.container-f{
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .mini-box:hover img {
     transform: scale(1.05);
