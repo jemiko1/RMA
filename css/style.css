@@ -20,7 +20,7 @@ body{
     color: gray;
 }
 .tickets{
-    background-color: #1e1e1e;
+    background-color: #ebebeb;
     padding: 2%;
 }
 .tickets-box:hover {
@@ -28,8 +28,8 @@ body{
     transform: scale(1.001);
 }
 .tickets2{
-    background-color: #1e1e1e;
-    padding: 10px;
+    background-color: #ebebeb;
+    padding: 20px;
     display: none;
 }
 .laliga{
@@ -47,9 +47,9 @@ body{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    color: #fff;
+    color: gray;
     margin-top: 20px;
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid gray;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
@@ -58,6 +58,7 @@ body{
     padding: 1%;
     border-radius: 15px;
     margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-sm{
     display: none;
@@ -695,7 +696,7 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e !important;
+    background: #1e1e1e !important;
 }
 #footer h5{
     padding-left: 10px;
